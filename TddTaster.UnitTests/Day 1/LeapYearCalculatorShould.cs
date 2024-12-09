@@ -30,7 +30,7 @@ namespace TddTaster.UnitTests.Day1
         [InlineData(1000)]
         [InlineData(1900)]
         [InlineData(2100)]
-        public void ReturnFalse_WhenYearIs_NotDivisibleBy4And100_ButNotBy400(int year)
+        public void ReturnFalse_WhenYearIs_DivisibleBy4And100_ButNotBy400(int year)
         {
             var isLeapYear = LeapYearCalculator.IsLeapYear(year);
 
